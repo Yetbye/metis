@@ -10,6 +10,9 @@
   <meta property="og:type" content="website">
   <meta property="og:image" content="./assets/metis-tide.png">
   <title>METIS · 墨提斯</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;900&family=Noto+Sans+SC:wght@400;500&family=Playfair+Display:ital,wght@0,500;1,500;1,600&family=JetBrains+Mono:wght@400;500&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
   <script src="./script.js" defer></script>
 </head>
@@ -22,55 +25,127 @@
       <span>METIS</span>
     </a>
     <nav class="site-nav" aria-label="主导航">
-      <a href="#memory" data-spy="memory">记忆</a>
-      <a href="#collaboration" data-spy="collaboration">协作</a>
-      <a href="#evidence" data-spy="evidence">试验</a>
-      <a href="./blog.html">札记</a>
+      <a href="#memory" data-spy="memory"><span class="nav-num">01</span>记忆</a>
+      <a href="#collaboration" data-spy="collaboration"><span class="nav-num">02</span>协作</a>
+      <a href="#evidence" data-spy="evidence"><span class="nav-num">03</span>试验</a>
+      <a href="./blog.html"><span class="nav-num">04</span>札记</a>
     </nav>
     <span class="issue">VOL. 01 · 2026</span>
     <span class="scroll-progress" aria-hidden="true"><i></i></span>
   </header>
 
   <main id="main">
+    <!-- ═══════════ Hero · 水面 ═══════════ -->
     <section class="hero" id="top" aria-labelledby="hero-title">
-      <div class="hero-image" aria-hidden="true">
+      <div class="hero-image" data-depth="0.012" aria-hidden="true">
         <img src="./assets/metis-tide.png" alt="" fetchpriority="high">
       </div>
       <div class="hero-wash" aria-hidden="true"></div>
+
+      <!-- 装饰层：色斑碰撞 + 几何椭圆 + 剪影 + 银尘 -->
+      <div class="hero-deco" aria-hidden="true">
+        <div class="color-blocks">
+          <i class="block block-gold"></i>
+          <i class="block block-blue"></i>
+          <i class="block block-clay"></i>
+        </div>
+        <div class="geo-orbit geo-o1"></div>
+        <div class="geo-orbit geo-o2"></div>
+        <img class="hero-venus" data-depth="0.03" src="./assets/decor/venus-silhouette.svg" alt="">
+        <img class="hero-shell shell-a" data-depth="0.05" src="./assets/decor/shell.svg" alt="">
+        <img class="hero-shell shell-b" data-depth="0.04" src="./assets/decor/shell.svg" alt="">
+        <img class="hero-swallow swallow-a" src="./assets/decor/ink-swallow.svg" alt="">
+        <img class="hero-swallow swallow-b" src="./assets/decor/ink-swallow.svg" alt="">
+        <div class="mote-field" data-motes="14"></div>
+      </div>
+
       <svg class="hero-thread" viewBox="0 0 1440 520" preserveAspectRatio="none" aria-hidden="true">
         <path d="M-40 368 C 180 332, 276 438, 468 380 S 772 304, 972 366 S 1264 438, 1490 322"></path>
       </svg>
 
-      <div class="hero-copy">
-        <p class="eyebrow">Μῆτις · the quiet intelligence</p>
-        <h1 id="hero-title">我们并不需要<br>另一个更响亮的机器。</h1>
-        <p class="hero-lead">只需要一种会记得、会停顿，<br>也会在必要时来到身边的智慧。</p>
+      <!-- 底部希腊波浪带 -->
+      <div class="hero-waveband" aria-hidden="true">
+        <div class="waveband waveband-back"></div>
+        <div class="waveband waveband-front"></div>
       </div>
 
-      <p class="hero-caption">水面保存天空，记忆保存一个人。</p>
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="greek">Μῆτις</span> · <em>the quiet intelligence</em></p>
+        <h1 id="hero-title">我们并不需要<br>另一个<span class="title-mark">更响亮</span>的<span class="keep">机器</span></h1>
+        <p class="hero-lead">只需要一种会记得、会停顿，<br>也会在必要时来到身边的智慧</p>
+        <p class="hero-hand" aria-hidden="true">安静地，靠近一个人</p>
+      </div>
+
+      <p class="hero-caption">水面保存天空，记忆保存一个人</p>
       <a class="scroll-cue" href="#prologue" aria-label="继续阅读"><span></span>继续</a>
     </section>
 
+    <!-- ═══════════ 序 ═══════════ -->
     <section class="prologue spacious" id="prologue" aria-labelledby="prologue-title">
+      <div class="prologue-deco" aria-hidden="true">
+        <div class="color-blocks">
+          <i class="block block-blue block-soft"></i>
+          <i class="block block-gold block-soft"></i>
+          <i class="block block-clay block-soft"></i>
+        </div>
+        <div class="geo-orbit geo-o3"></div>
+        <div class="geo-orbit geo-o5"></div>
+        <span class="prologue-watermark" aria-hidden="true">Μ</span>
+        <img class="corner-art corner-tl" src="./assets/decor/corner-greek.svg" alt="">
+        <img class="corner-art corner-br" src="./assets/decor/corner-greek.svg" alt="">
+        <img class="prologue-venus" src="./assets/decor/venus-silhouette.svg" alt="">
+        <img class="prologue-sun" data-drift="0.06" src="./assets/decor/circle-deco.svg" alt="">
+        <img class="prologue-ripple ripple-a" src="./assets/decor/ripple.svg" alt="">
+        <img class="prologue-ripple ripple-b" src="./assets/decor/ripple.svg" alt="">
+        <img class="prologue-shell shell-p-a" data-drift="0.04" src="./assets/decor/shell.svg" alt="">
+        <img class="prologue-shell shell-p-b" data-drift="0.05" src="./assets/decor/shell.svg" alt="">
+        <img class="prologue-branch" data-drift="0.03" src="./assets/decor/ink-branch.svg" alt="">
+        <div class="prologue-waveband" aria-hidden="true">
+          <div class="waveband waveband-back"></div>
+          <div class="waveband waveband-front"></div>
+        </div>
+        <div class="seigaiha-band"></div>
+        <div class="mote-field" data-motes="6"></div>
+      </div>
       <p class="folio">序 · 在回答以前</p>
-      <div class="prologue-grid reveal">
-        <h2 id="prologue-title">她没有先说话。</h2>
-        <div class="prose">
-          <p>她先记住窗外的雨，桌面上未竟的事，和一句没有说完的话。</p>
-          <p>她知道有时沉默不是离开。知道一次委托也许会横跨许多窗口、许多夜晚；知道“完成”与“你已经收到”并不是同一件事。</p>
-          <p>我们把这项实验叫作 <em>METIS</em>。在古老的神话里，那不是知识的堆积，而是在变化里选择恰当行动的智慧。</p>
+      <div class="prologue-grid">
+        <figure class="prologue-visual reveal" data-reveal="left">
+          <div class="prologue-frame" data-tilt>
+            <img src="./assets/prologue-window.png" alt="古典画：大理石头像半浮于雾蓝静水，远处水墨山影与飞鸟" loading="lazy">
+            <svg class="prologue-overlay" viewBox="0 0 760 570" aria-hidden="true">
+              <ellipse cx="380" cy="285" rx="300" ry="110" transform="rotate(-18 380 285)" fill="none" stroke="rgba(240,244,245,.5)" stroke-width="1"/>
+              <ellipse cx="380" cy="285" rx="240" ry="150" transform="rotate(24 380 285)" fill="none" stroke="rgba(169,153,121,.4)" stroke-width=".8" stroke-dasharray="4 6"/>
+              <circle cx="150" cy="180" r="2.5" fill="rgba(240,244,245,.8)"/>
+              <circle cx="610" cy="360" r="2.5" fill="rgba(240,244,245,.7)"/>
+            </svg>
+            <span class="prologue-tag">PROLOGUE · BEFORE THE ANSWER</span>
+          </div>
+        </figure>
+        <div class="prologue-copy reveal" data-reveal="right">
+          <h2 id="prologue-title">她没有先<span class="title-clay">说话</span></h2>
+          <div class="prose">
+            <p class="prose-lead">她先记住窗外的雨，桌面上未竟的事，和一句没有说完的话。</p>
+            <p>她知道有时沉默不是离开。知道一次委托也许会横跨许多窗口、许多夜晚；知道“完成”与“你已经收到”并不是同一件事。</p>
+            <p>我们把这项实验叫作 <em>METIS</em>。在古老的神话里，那不是知识的堆积，而是在变化里选择恰当行动的智慧。</p>
+          </div>
         </div>
       </div>
+      <div class="section-divider" aria-hidden="true"><img src="./assets/decor/divider-wave.svg" alt=""></div>
     </section>
 
-    <!-- 一 · 记忆 -->
+    <!-- ═══════════ 一 · 记忆 ═══════════ -->
     <section class="section memory" id="memory" aria-labelledby="memory-title">
-      <div class="deco-wave" aria-hidden="true"></div>
-      <div class="greek-corner corner-tr" aria-hidden="true"></div>
+      <div class="memory-deco" aria-hidden="true">
+        <div class="color-blocks"><i class="block block-gold block-soft"></i><i class="block block-blue block-soft block-right"></i></div>
+        <img class="corner-art corner-tl" src="./assets/decor/corner-greek.svg" alt="">
+        <img class="corner-art corner-br" src="./assets/decor/corner-greek.svg" alt="">
+        <img class="memory-shell" data-drift="0.05" src="./assets/decor/shell.svg" alt="">
+        <div class="seigaiha-band"></div>
+      </div>
       <div class="classical-line" aria-hidden="true"></div>
 
       <div class="section-frame">
-        <aside class="section-rail reveal">
+        <aside class="section-rail reveal" data-reveal="left">
           <p class="folio">一 · 记忆不是档案柜</p>
           <span class="rail-num" aria-hidden="true">01</span>
           <span class="rail-line" aria-hidden="true"></span>
@@ -79,51 +154,53 @@
 
         <div class="section-body">
           <header class="section-intro reveal">
-            <h2 id="memory-title">一件小事，<br>在时间里找到它的位置。</h2>
-            <p class="intro-note">触碰星点。每一圈都代表一种不同的记得。</p>
+            <h2 id="memory-title">一件小事，<br>在时间里找到它的<span class="title-clay">位置</span></h2>
+            <p class="intro-note">触碰星点，每一圈都代表一种不同的记得</p>
           </header>
 
-          <div class="memory-atlas reveal">
-            <div class="memory-orbit" aria-label="个人记忆关系图">
-              <svg class="memory-constellation" viewBox="0 0 720 640" role="img" aria-labelledby="memory-visual-title memory-visual-desc">
-                <title id="memory-visual-title">记忆的潮汐图</title>
-                <desc id="memory-visual-desc">四条椭圆轨道代表偏好、事实、视觉情节和承诺，围绕一个人的日常缓慢交叠。</desc>
-                <defs>
-                  <radialGradient id="memory-glow"><stop stop-color="#d1ad82" stop-opacity=".44"/><stop offset="1" stop-color="#d1ad82" stop-opacity="0"/></radialGradient>
-                  <linearGradient id="orbit-ink" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#31596f" stop-opacity=".1"/><stop offset=".52" stop-color="#31596f" stop-opacity=".76"/><stop offset="1" stop-color="#a96f56" stop-opacity=".44"/></linearGradient>
-                </defs>
-                <circle class="memory-glow" cx="360" cy="320" r="182" fill="url(#memory-glow)"/>
-                <g class="orbit-lines" fill="none" stroke="url(#orbit-ink)">
-                  <ellipse data-draw cx="360" cy="320" rx="286" ry="102" transform="rotate(-31 360 320)"/>
-                  <ellipse data-draw cx="360" cy="320" rx="254" ry="146" transform="rotate(37 360 320)"/>
-                  <ellipse data-draw cx="360" cy="320" rx="230" ry="84" transform="rotate(5 360 320)"/>
-                  <ellipse data-draw cx="360" cy="320" rx="154" ry="216" transform="rotate(64 360 320)"/>
-                </g>
-                <g class="memory-filaments" fill="none" stroke="#a99979" stroke-opacity=".7">
-                  <path d="M102 426 C205 392 236 214 354 194 S521 243 615 137"/>
-                  <path d="M147 148 C251 242 227 399 376 443 S511 406 595 507"/>
-                  <path d="M99 301 C192 269 244 319 335 318 S504 293 633 346"/>
-                </g>
-                <circle cx="360" cy="320" r="46" fill="#e9eef1" stroke="#31596f" stroke-opacity=".55"/>
-                <circle cx="360" cy="320" r="7" fill="#9b7651"/>
-                <circle class="memory-node node-fact" cx="103" cy="426" r="8"/>
-                <circle class="memory-node node-scene" cx="615" cy="137" r="8"/>
-                <circle class="memory-node node-promise" cx="595" cy="507" r="8"/>
-                <circle class="memory-node node-preference" cx="147" cy="148" r="8"/>
-                <text x="333" y="389" class="orbit-caption">A LIFE, IN CONTEXT</text>
-              </svg>
-              <span class="orbit-label label-fact">事实</span>
-              <span class="orbit-label label-scene">画面</span>
-              <span class="orbit-label label-promise">承诺</span>
-              <span class="orbit-label label-preference">偏好</span>
-              <span class="atlas-cross" aria-hidden="true">✳</span>
+          <div class="memory-atlas reveal" data-reveal="scale">
+            <div class="memory-stage">
+              <div class="stage-frame" data-tilt>
+                <img class="stage-image" src="./assets/metis-orbit.png" alt="古典画：大理石女性头像侧面，银色轨道环绕，水墨山影间一羽飞燕" loading="lazy">
+                <svg class="stage-rings" viewBox="0 0 720 640" role="img" aria-labelledby="memory-visual-title memory-visual-desc">
+                  <title id="memory-visual-title">记忆的潮汐图</title>
+                  <desc id="memory-visual-desc">四条椭圆轨道代表偏好、事实、视觉情节和承诺，围绕一个人的日常缓慢交叠。</desc>
+                  <defs>
+                    <radialGradient id="memory-glow"><stop stop-color="#d1ad82" stop-opacity=".44"/><stop offset="1" stop-color="#d1ad82" stop-opacity="0"/></radialGradient>
+                    <linearGradient id="orbit-ink" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#31596f" stop-opacity=".1"/><stop offset=".52" stop-color="#31596f" stop-opacity=".76"/><stop offset="1" stop-color="#a96f56" stop-opacity=".44"/></linearGradient>
+                  </defs>
+                  <circle class="memory-glow" cx="360" cy="320" r="182" fill="url(#memory-glow)"/>
+                  <g class="orbit-lines" fill="none" stroke="url(#orbit-ink)">
+                    <ellipse data-draw cx="360" cy="320" rx="286" ry="102" transform="rotate(-31 360 320)"/>
+                    <ellipse data-draw cx="360" cy="320" rx="254" ry="146" transform="rotate(37 360 320)"/>
+                    <ellipse data-draw cx="360" cy="320" rx="230" ry="84" transform="rotate(5 360 320)"/>
+                    <ellipse data-draw cx="360" cy="320" rx="154" ry="216" transform="rotate(64 360 320)"/>
+                  </g>
+                  <g class="memory-filaments" fill="none" stroke="#a99979" stroke-opacity=".7">
+                    <path d="M102 426 C205 392 236 214 354 194 S521 243 615 137"/>
+                    <path d="M147 148 C251 242 227 399 376 443 S511 406 595 507"/>
+                    <path d="M99 301 C192 269 244 319 335 318 S504 293 633 346"/>
+                  </g>
+                  <circle cx="360" cy="320" r="22" fill="#e9eef1" fill-opacity=".5" stroke="#31596f" stroke-opacity=".4"/>
+                  <circle cx="360" cy="320" r="5" fill="#9b7651"/>
+                  <circle class="memory-node node-fact" cx="103" cy="426" r="8"/>
+                  <circle class="memory-node node-scene" cx="615" cy="137" r="8"/>
+                  <circle class="memory-node node-promise" cx="595" cy="507" r="8"/>
+                  <circle class="memory-node node-preference" cx="147" cy="148" r="8"/>
+                  <text x="298" y="596" class="orbit-caption">A LIFE, IN CONTEXT</text>
+                </svg>
+                <span class="orbit-label label-fact">事实</span>
+                <span class="orbit-label label-scene">画面</span>
+                <span class="orbit-label label-promise">承诺</span>
+                <span class="orbit-label label-preference">偏好</span>
+              </div>
             </div>
 
             <aside class="memory-reading" aria-live="polite">
-              <div class="reading-card">
+              <div class="reading-card ink-hover">
                 <p class="reading-demo">记忆单页 · 演示案例</p>
                 <p class="reading-kicker" id="memory-kind">日常的偏好</p>
-                <h3 id="memory-entry-title">周二与周四，留给跑步。</h3>
+                <h3 id="memory-entry-title">周二与周四，留给跑步</h3>
                 <p id="memory-entry-body">它不是一条孤立的日程。重复的节奏，慢慢变成关于一个人的知识；当计划改变，它也可以被修正。</p>
                 <p class="reading-source"><span>来源</span><span id="memory-entry-source">多次提及 · 可更正</span></p>
                 <div class="memory-controls" role="group" aria-label="切换记忆类型">
@@ -132,7 +209,7 @@
                   <button type="button" class="memory-control" data-memory="scene" aria-pressed="false">画面</button>
                   <button type="button" class="memory-control" data-memory="promise" aria-pressed="false">承诺</button>
                 </div>
-                <p class="reading-note">每条记忆都有来处，也都留有离开的路。</p>
+                <p class="reading-note">每条记忆都有来处，也都留有离开的路</p>
               </div>
             </aside>
           </div>
@@ -145,15 +222,21 @@
           </ol>
         </div>
       </div>
+      <div class="section-divider" aria-hidden="true"><img src="./assets/decor/divider-wave.svg" alt=""></div>
     </section>
 
-    <!-- 二 · 协作 -->
+    <!-- ═══════════ 二 · 协作 ═══════════ -->
     <section class="section collaboration" id="collaboration" aria-labelledby="collaboration-title">
-      <div class="greek-corner corner-bl" aria-hidden="true"></div>
+      <div class="collab-deco" aria-hidden="true">
+        <img class="collab-wave" data-drift="0.04" src="./assets/decor/wave-great.svg" alt="">
+        <img class="collab-cloud cloud-a" src="./assets/decor/cloud.svg" alt="">
+        <img class="collab-cloud cloud-b" src="./assets/decor/cloud.svg" alt="">
+        <img class="corner-art corner-bl" src="./assets/decor/corner-greek.svg" alt="">
+      </div>
       <div class="classical-line" aria-hidden="true"></div>
 
       <div class="section-frame">
-        <aside class="section-rail reveal">
+        <aside class="section-rail reveal" data-reveal="left">
           <p class="folio">二 · 一项工作怎样回来</p>
           <span class="rail-num" aria-hidden="true">02</span>
           <span class="rail-line" aria-hidden="true"></span>
@@ -162,34 +245,47 @@
 
         <div class="section-body">
           <header class="section-intro reveal">
-            <h2 id="collaboration-title">前台与后台，<br>共享同一条时间。</h2>
-            <p class="intro-note collaboration-intro">提问不该丢在一条看不见的支线上。回答之后，工作从中断处继续。</p>
+            <h2 id="collaboration-title">前台与后台，<br>共享同一条<span class="title-blue">时间</span></h2>
+            <p class="intro-note collaboration-intro">提问不该丢在一条看不见的支线上，回答之后，工作从中断处继续</p>
           </header>
 
-          <div class="relay-figure reveal">
+          <figure class="relay-banner reveal" data-reveal="scale">
+            <div class="banner-frame">
+              <img src="./assets/panel-relay.png" alt="古典画：两只大理石手在石台上方传递一根金线，雾中神庙与飞燕" loading="lazy">
+              <span class="banner-tag">RELAY · PROTOCOL</span>
+            </div>
+          </figure>
+
+          <div class="relay-figure reveal" data-reveal="scale">
             <svg class="relay-path" viewBox="0 0 1200 420" preserveAspectRatio="none" aria-hidden="true">
               <path class="relay-path-base" d="M70 252 C180 252 170 124 300 124 S420 290 545 290 S650 124 772 124 S885 290 1000 290 S1085 205 1140 205"/>
               <path class="relay-path-live" d="M70 252 C180 252 170 124 300 124 S420 290 545 290 S650 124 772 124 S885 290 1000 290 S1085 205 1140 205"/>
             </svg>
-            <div class="relay-card relay-card-front"><span class="relay-no" aria-hidden="true">01</span><span class="relay-icon" aria-hidden="true">◌</span><small>前台 · 正在交谈</small><strong>你还在这里</strong><i>语音 / 画面</i></div>
-            <div class="relay-card relay-card-agent"><span class="relay-no" aria-hidden="true">02</span><span class="relay-icon" aria-hidden="true">∿</span><small>后台 · 独立执行</small><strong>任务继续走</strong><i>研究 / 文件 / 浏览器</i></div>
-            <div class="relay-card relay-card-question"><span class="relay-no" aria-hidden="true">03</span><span class="relay-icon" aria-hidden="true">?</span><small>信息缺口</small><strong>回来问你</strong><i>可听见 · 可回答</i></div>
-            <div class="relay-card relay-card-return"><span class="relay-no" aria-hidden="true">04</span><span class="relay-icon" aria-hidden="true">↗</span><small>恢复 · 同一任务</small><strong>从这里继续</strong><i>保留上下文</i></div>
-            <div class="relay-card relay-card-delivery"><span class="relay-no" aria-hidden="true">05</span><span class="relay-icon" aria-hidden="true">◉</span><small>交付 · 有回执</small><strong>结果抵达</strong><i>排队 / 播出 / 收到</i></div>
+            <div class="relay-card relay-card-front ink-hover"><span class="relay-no" aria-hidden="true">01</span><span class="relay-icon" aria-hidden="true">◌</span><small>前台 · 正在交谈</small><strong>你还在这里</strong><i>语音 / 画面</i></div>
+            <div class="relay-card relay-card-agent ink-hover"><span class="relay-no" aria-hidden="true">02</span><span class="relay-icon" aria-hidden="true">∿</span><small>后台 · 独立执行</small><strong>任务继续走</strong><i>研究 / 文件 / 浏览器</i></div>
+            <div class="relay-card relay-card-question ink-hover"><span class="relay-no" aria-hidden="true">03</span><span class="relay-icon" aria-hidden="true">?</span><small>信息缺口</small><strong>回来问你</strong><i>可听见 · 可回答</i></div>
+            <div class="relay-card relay-card-return ink-hover"><span class="relay-no" aria-hidden="true">04</span><span class="relay-icon" aria-hidden="true">↗</span><small>恢复 · 同一任务</small><strong>从这里继续</strong><i>保留上下文</i></div>
+            <div class="relay-card relay-card-delivery ink-hover"><span class="relay-no" aria-hidden="true">05</span><span class="relay-icon" aria-hidden="true">◉</span><small>交付 · 有回执</small><strong>结果抵达</strong><i>排队 / 播出 / 收到</i></div>
             <span class="relay-axis axis-left">你在前台</span>
             <span class="relay-axis axis-right">工作在后台</span>
           </div>
           <p class="relay-caption reveal"><span>任务完成</span><b></b><span>不等于</span><b></b><span>用户收到</span></p>
         </div>
       </div>
+      <div class="section-divider" aria-hidden="true"><img src="./assets/decor/divider-wave.svg" alt=""></div>
     </section>
 
-    <!-- 三 · 眼睛与手 -->
+    <!-- ═══════════ 三 · 眼睛与手 ═══════════ -->
     <section class="section local-action" id="local-action" aria-labelledby="local-action-title">
+      <div class="action-deco" aria-hidden="true">
+        <div class="geo-orbit geo-o4"></div>
+        <img class="action-spiral" data-drift="0.05" src="./assets/decor/golden-spiral.svg" alt="">
+        <img class="action-ripple" src="./assets/decor/ripple.svg" alt="">
+      </div>
       <div class="classical-line" aria-hidden="true"></div>
 
       <div class="section-frame">
-        <aside class="section-rail reveal">
+        <aside class="section-rail reveal" data-reveal="left">
           <p class="folio">三 · 眼睛与手</p>
           <span class="rail-num" aria-hidden="true">03</span>
           <span class="rail-line" aria-hidden="true"></span>
@@ -198,21 +294,25 @@
 
         <div class="section-body">
           <header class="section-intro reveal">
-            <h2 id="local-action-title">先读懂桌面，<br>再伸手触碰。</h2>
-            <p class="intro-note">一个动作要留下两处痕迹：它做了什么，页面后来变成什么。</p>
+            <h2 id="local-action-title">先读懂桌面，<br>再<span class="title-clay">伸手</span>触碰</h2>
+            <p class="intro-note">一个动作要留下两处痕迹：它做了什么，页面后来变成什么</p>
           </header>
 
-          <div class="desktop-study reveal" aria-label="浏览器无障碍信息与动作确认示意">
-            <div class="study-window">
+          <div class="desktop-study reveal" data-reveal="scale" aria-label="浏览器无障碍信息与动作确认示意">
+            <div class="study-window" data-tilt>
               <div class="study-chrome"><span></span><span></span><span></span><i>edge://workbench</i></div>
-              <div class="study-page">
-                <div class="study-site-mark"></div><div class="study-image"></div>
-                <div class="study-page-lines"><i></i><i></i><i></i></div>
-                <div class="study-like"><span>♡</span> 收藏这篇笔记</div>
+              <div class="study-media">
+                <img src="./assets/panel-bust.png" alt="古典画：白色大理石女性胸像侧面，柱影墙前一枝水墨花鸟" loading="lazy">
+                <div class="study-page-overlay">
+                  <div class="study-site-mark"></div>
+                  <div class="study-page-lines"><i></i><i></i><i></i></div>
+                  <div class="study-like"><span>♡</span> 收藏这篇笔记</div>
+                </div>
                 <div class="study-cursor" aria-hidden="true"></div>
+                <div class="study-click-ring" aria-hidden="true"></div>
               </div>
             </div>
-            <div class="study-tree">
+            <div class="study-tree ink-hover">
               <p>ACCESSIBILITY TREE</p>
               <ul>
                 <li>document <span>笔记详情</span></li><li>article <span>植物与雨</span></li>
@@ -233,22 +333,28 @@
       </div>
     </section>
 
-    <figure class="interlude reveal">
-      <div class="interlude-image">
-        <img src="./assets/metis-tide.png" alt="雾蓝色水面上，古典石像在远处静坐，银色细线横过水面" loading="lazy">
+    <!-- ═══════════ 插页 · 潮汐 ═══════════ -->
+    <figure class="interlude reveal" data-reveal="fade">
+      <div class="interlude-image" data-parallax>
+        <img src="./assets/metis-tide.png" alt="古典画：石像静坐于断柱之上，希腊柱廊没入水墨山水，双鹭掠过水面" loading="lazy">
       </div>
       <figcaption>
-        <span>Μῆτις / memory as tide</span>
-        <blockquote>“愿她记住的，不只是关于我的事实，<br>还有我曾怎样经过这些日子。”</blockquote>
+        <span><i class="greek">Μῆτις</i> / memory as tide</span>
+        <blockquote>“愿她记住的，不只是关于我的事实，<br>还有我曾怎样经过这些日子”</blockquote>
       </figcaption>
     </figure>
 
-    <!-- 四 · 札记入口（完整内容在 blog.html） -->
+    <!-- ═══════════ 四 · 札记入口 ═══════════ -->
     <section class="section journal-entry" id="field-notes" aria-labelledby="notes-title">
+      <div class="journal-deco" aria-hidden="true">
+        <div class="color-blocks"><i class="block block-clay block-soft"></i></div>
+        <img class="journal-petals" data-drift="0.04" src="./assets/decor/sakura.svg" alt="">
+        <img class="corner-art corner-tr" src="./assets/decor/corner-greek.svg" alt="">
+      </div>
       <div class="classical-line" aria-hidden="true"></div>
 
       <div class="section-frame">
-        <aside class="section-rail reveal">
+        <aside class="section-rail reveal" data-reveal="left">
           <p class="folio">四 · 研究札记</p>
           <span class="rail-num" aria-hidden="true">04</span>
           <span class="rail-line" aria-hidden="true"></span>
@@ -257,36 +363,53 @@
 
         <div class="section-body">
           <header class="section-intro reveal">
-            <h2 id="notes-title">从一个问题，<br>开始一页新的阅读。</h2>
-            <p class="intro-note">长文、机制、对照和试验记录，已另起一页。每篇札记都回到一次实际运行。</p>
+            <h2 id="notes-title">从一个问题，<br>开始一页新的<span class="title-blue">阅读</span></h2>
+            <p class="intro-note">长文、机制、对照和试验记录，已另起一页，每篇札记都回到一次实际运行</p>
           </header>
 
-          <a class="entry-feature reveal" href="./blog.html">
+          <a class="entry-feature reveal ink-hover" href="./blog.html">
             <span class="entry-art" aria-hidden="true">
-              <svg viewBox="0 0 760 360"><path d="M70 266 C210 252 181 105 350 115 S525 288 692 81"/><ellipse cx="382" cy="184" rx="223" ry="104"/><ellipse cx="382" cy="184" rx="111" ry="166" transform="rotate(48 382 184)"/><circle cx="382" cy="184" r="18"/><path d="M86 83h104M580 277h90"/></svg>
+              <img src="./assets/metis-orbit.png" alt="" loading="lazy">
             </span>
             <span class="entry-copy">
               <span class="note-meta">FEATURED · COMPARISON · 12 MIN</span>
-              <span class="entry-title">同样谈记忆，Today 与本机 Agent 从哪里分岔？</span>
+              <span class="entry-title">同样谈记忆，Today 与本机 Agent 从哪里分岔</span>
               <span class="entry-sum">一边从跨设备的生活连续性展开；一边从浏览器、桌面与本地权限开始。</span>
             </span>
-            <span class="entry-cta">进入札记 <b aria-hidden="true">↗</b></span>
+            <span class="entry-cta" data-magnetic>进入札记 <b aria-hidden="true">↗</b></span>
           </a>
 
           <ul class="entry-list" data-stagger>
-            <li><a href="./blog.html#article-relay"><span class="note-meta">PROTOCOL · 9 MIN</span><strong>后台问了一句，然后呢？</strong><i aria-hidden="true">↗</i></a></li>
+            <li><a href="./blog.html#article-relay"><span class="note-meta">PROTOCOL · 9 MIN</span><strong>后台问了一句，然后呢</strong><i aria-hidden="true">↗</i></a></li>
             <li><a href="./blog.html#article-proof"><span class="note-meta">EVIDENCE · 11 MIN</span><strong>一声“完成”，还不算交付</strong><i aria-hidden="true">↗</i></a></li>
           </ul>
         </div>
       </div>
+      <div class="section-divider" aria-hidden="true"><img src="./assets/decor/divider-wave.svg" alt=""></div>
     </section>
 
-    <!-- 五 · 试验附录 -->
+    <!-- ═══════════ 插页 · 对望 ═══════════ -->
+    <figure class="interlude interlude-relay reveal" data-reveal="fade">
+      <div class="interlude-image" data-parallax>
+        <img src="./assets/metis-relay.png" alt="古典画：两尊石像隔水相望，银线贴水相连，远处水墨群山与归鸟" loading="lazy">
+      </div>
+      <figcaption>
+        <span><i class="greek">Μῆτις</i> / the relay</span>
+        <blockquote>“一次委托也许会横跨许多夜晚，<br>但那根线，始终没有断”</blockquote>
+      </figcaption>
+    </figure>
+
+    <!-- ═══════════ 五 · 试验附录 ═══════════ -->
     <section class="section evidence" id="evidence" aria-labelledby="evidence-title">
+      <div class="evidence-deco" aria-hidden="true">
+        <div class="seigaiha-field"></div>
+        <img class="evidence-mountains" src="./assets/decor/mountain-ink.svg" alt="">
+        <img class="corner-art corner-tr" src="./assets/decor/corner-greek.svg" alt="">
+      </div>
       <div class="classical-line" aria-hidden="true"></div>
 
       <div class="section-frame">
-        <aside class="section-rail reveal">
+        <aside class="section-rail reveal" data-reveal="left">
           <p class="folio">五 · 试验附录</p>
           <span class="rail-num" aria-hidden="true">05</span>
           <span class="rail-line" aria-hidden="true"></span>
@@ -295,61 +418,94 @@
 
         <div class="section-body">
           <header class="section-intro reveal">
-            <h2 id="evidence-title">证据应当安静，<br>但不能含糊。</h2>
+            <h2 id="evidence-title">证据应当安静，<br>但不能<span class="title-clay">含糊</span></h2>
           </header>
 
           <div class="stat-grid" data-stagger>
-            <div class="stat"><span class="stat-num" data-count="361">361</span><span class="stat-label">项离线回归</span></div>
+            <div class="stat ink-hover"><span class="stat-num" data-count="361">361</span><span class="stat-label">项离线回归</span></div>
             <div class="stat is-highlight"><span class="stat-num" data-count="360">360</span><span class="stat-label">项通过</span></div>
-            <div class="stat"><span class="stat-num" data-count="0">0</span><span class="stat-label">失败</span></div>
-            <div class="stat"><span class="stat-num" data-count="1">1</span><span class="stat-label">权限分支跳过</span></div>
+            <div class="stat ink-hover"><span class="stat-num" data-count="0">0</span><span class="stat-label">失败</span></div>
+            <div class="stat ink-hover"><span class="stat-num" data-count="1">1</span><span class="stat-label">权限分支跳过</span></div>
           </div>
 
-          <div class="ledger reveal" role="table" aria-label="METIS 阶段二试验记录">
-            <div class="ledger-row ledger-head" role="row">
-              <span role="columnheader">场景</span>
-              <span role="columnheader">观察</span>
-              <span role="columnheader">边界</span>
+          <div class="evidence-grid reveal">
+            <div class="ledger" role="table" aria-label="METIS 阶段二试验记录">
+              <div class="ledger-row ledger-head" role="row">
+                <span role="columnheader">场景</span>
+                <span role="columnheader">观察</span>
+                <span role="columnheader">边界</span>
+              </div>
+              <div class="ledger-row" role="row">
+                <span role="cell">后台询问与恢复</span>
+                <span role="cell">问题抵达前台；回答后恢复同一任务</span>
+                <span role="cell">真实服务链路</span>
+              </div>
+              <div class="ledger-row" role="row">
+                <span role="cell">跨标签页观看</span>
+                <span role="cell">35 秒 / 54 帧 / 切页后 33 条观察可检索</span>
+                <span role="cell">受控环境</span>
+              </div>
+              <div class="ledger-row" role="row">
+                <span role="cell">浏览器动作</span>
+                <span role="cell">DOM、坐标与动作后状态回读通过</span>
+                <span role="cell">真实账号仍需复验</span>
+              </div>
+              <p class="boundary-note">受控页面不是实站，模型完成不是用户收到。尚未完成的验证，仍然保留它未完成的名字。</p>
             </div>
-            <div class="ledger-row" role="row">
-              <span role="cell">后台询问与恢复</span>
-              <span role="cell">问题抵达前台；回答后恢复同一任务</span>
-              <span role="cell">真实服务链路</span>
-            </div>
-            <div class="ledger-row" role="row">
-              <span role="cell">跨标签页观看</span>
-              <span role="cell">35 秒 / 54 帧 / 切页后 33 条观察可检索</span>
-              <span role="cell">受控环境</span>
-            </div>
-            <div class="ledger-row" role="row">
-              <span role="cell">浏览器动作</span>
-              <span role="cell">DOM、坐标与动作后状态回读通过</span>
-              <span role="cell">真实账号仍需复验</span>
-            </div>
-          </div>
 
-          <p class="boundary-note reveal">受控页面不是实站，模型完成不是用户收到。尚未完成的验证，仍然保留它未完成的名字。</p>
+            <figure class="proof-frame">
+              <img src="./assets/panel-proof.png" alt="古典画：残破的科林斯柱头半浸静水，一只鹭立浅滩，远处雾中神庙" loading="lazy">
+              <svg class="proof-overlay" viewBox="0 0 760 570" aria-hidden="true">
+                <ellipse cx="380" cy="300" rx="310" ry="90" transform="rotate(-8 380 300)" fill="none" stroke="rgba(240,244,245,.45)" stroke-width="1"/>
+                <path d="M60 430 C200 400 260 180 390 160 S580 220 700 120" fill="none" stroke="rgba(169,153,121,.35)" stroke-width=".8" stroke-dasharray="3 6"/>
+              </svg>
+              <figcaption><span>DELIVERY · PROOF</span>产物、摘要、播出、回应，分别留下证据</figcaption>
+            </figure>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- ═══════════ 插页 · 静候 ═══════════ -->
+    <figure class="interlude interlude-still reveal" data-reveal="fade">
+      <div class="interlude-image" data-parallax>
+        <img src="./assets/metis-waiting.png" alt="旧藏画：沉思的石像静坐雾蓝水边，银线横过静水，远处断柱" loading="lazy">
+      </div>
+      <figcaption>
+        <span><i class="greek">Μῆτις</i> / still water</span>
+        <blockquote>“她先听见水的声音，<br>然后才想起自己为什么停在那里”</blockquote>
+      </figcaption>
+    </figure>
+
+    <!-- ═══════════ 尾声 ═══════════ -->
     <section class="epilogue" aria-labelledby="epilogue-title">
+      <div class="epilogue-bg" aria-hidden="true">
+        <img src="./assets/metis-dawn.png" alt="" loading="lazy">
+      </div>
+      <div class="epilogue-wash" aria-hidden="true"></div>
       <div class="epilogue-orbit" aria-hidden="true"></div>
+      <img class="epilogue-branch" src="./assets/decor/ink-branch.svg" alt="" aria-hidden="true">
+      <img class="epilogue-swallow" src="./assets/decor/ink-swallow.svg" alt="" aria-hidden="true">
+      <div class="mote-field mote-field-epilogue" data-motes="10" aria-hidden="true"></div>
       <p class="folio">尾声</p>
-      <h2 id="epilogue-title" class="reveal">愿它终有一天，<br>不必被唤醒。</h2>
-      <p class="reveal">只是一直在那里。像窗边的光，像水保存过的天空。</p>
+      <h2 id="epilogue-title" class="reveal">愿它终有一天，<br>不必被唤醒</h2>
+      <p class="reveal">只是一直在那里，像窗边的光，像水保存过的天空</p>
+      <p class="epilogue-hand reveal" aria-hidden="true">水保存过的天空</p>
       <div class="epilogue-links reveal">
-        <a href="./blog.html">研究札记</a>
-        <a href="#evidence">试验记录</a>
-        <a href="https://github.com/Yetbye/metis" target="_blank" rel="noreferrer">本站源码</a>
+        <a href="./blog.html" data-magnetic>研究札记</a>
+        <a href="#evidence" data-magnetic>试验记录</a>
+        <a href="https://github.com/Yetbye/metis" target="_blank" rel="noreferrer" data-magnetic>本站源码</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <span>METIS · 墨提斯计划</span>
-    <span>为一个人，而不是为所有人。</span>
-    <a href="#top">回到水面</a>
+    <div class="footer-wave" aria-hidden="true"><img src="./assets/decor/divider-wave.svg" alt=""></div>
+    <div class="footer-row">
+      <span class="footer-brand">METIS · 墨提斯计划<i class="brand-line" aria-hidden="true"></i></span>
+      <span>为一个人，而不是为所有人</span>
+      <a href="#top">回到水面 ↑</a>
+    </div>
   </footer>
 </body>
 </html>
