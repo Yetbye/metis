@@ -1330,6 +1330,15 @@ button { font: inherit; }
 .footer-row a { justify-self: end; transition: color .3s ease; }
 .footer-row a:hover { color: var(--ink); }
 
+.footer-sign {
+  position: absolute; right: clamp(1.5rem, 4vw, 4.5rem); bottom: 1.3rem;
+  display: inline-flex; align-items: center; gap: .55rem;
+  color: var(--ink-faint); opacity: .6;
+  font: .6rem/1 var(--mono); letter-spacing: .2em;
+  transition: opacity .3s ease, color .3s ease;
+}
+.footer-sign:hover { opacity: 1; color: var(--ink); }
+
 /* ============================================================
    入场动效（reveal 变体 / stagger / draw / count）
    ============================================================ */
@@ -1793,6 +1802,7 @@ button { font: inherit; }
   .footer-row { grid-template-columns: 1fr; padding-top: 2rem; padding-bottom: 2rem; text-align: center; }
   .footer-brand { align-items: center; }
   .footer-row a { justify-self: center; }
+  .footer-sign { position: static; width: 100%; justify-content: center; margin: .2rem 0 1.6rem; }
 }
 
 @media (max-width: 560px) {
