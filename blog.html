@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#e9eef1">
+  <meta name="description" content="METIS 研究札记 — 长文、机制、对照和试验记录。">
+  <meta property="og:title" content="METIS · 研究札记">
+  <meta property="og:description" content="从一个问题，开始一页新的阅读。">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="./assets/metis-tide.png">
+  <title>研究札记 · METIS</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+</head>
+<body class="page-blog">
+  <a class="skip-link" href="#main">跳到正文</a>
+
+  <header class="site-header" aria-label="页首">
+    <a class="wordmark" href="./index.html" aria-label="METIS 首页">
+      <span class="wordmark-mark" aria-hidden="true">◇</span>
+      <span>METIS</span>
+    </a>
+    <nav class="site-nav" aria-label="主导航">
+      <a href="./index.html#memory">记忆</a>
+      <a href="./index.html#collaboration">协作</a>
+      <a href="./index.html#evidence">试验</a>
+      <a href="#top" aria-current="page">札记</a>
+    </nav>
+    <span class="issue">FIELD NOTES · 2026</span>
+    <span class="scroll-progress" aria-hidden="true"><i></i></span>
+  </header>
+
+  <main id="main">
+    <!-- 博客刊头 -->
+    <section class="blog-masthead" id="top" aria-labelledby="blog-title">
+      <div class="blog-masthead-art" aria-hidden="true">
+        <img src="./assets/metis-tide.png" alt="">
+      </div>
+      <div class="blog-masthead-wash" aria-hidden="true"></div>
+      <div class="blog-masthead-copy">
+        <p class="eyebrow">METIS · FIELD NOTES / 研究札记</p>
+        <h1 id="blog-title">从一个问题，<br>开始一页新的阅读。</h1>
+        <p class="blog-lead">长文、机制、对照和试验记录。<br>每一篇都回到一次实际运行。</p>
+      </div>
+      <div class="blog-masthead-meta" aria-hidden="true">
+        <span>VOL. 01</span><span>04 篇札记</span><span>更新于 2026 · 11</span>
+      </div>
+      <div class="classical-line classical-line-blog" aria-hidden="true"></div>
+    </section>
+
+    <!-- 参照卡片 -->
+    <section class="blog-reference-band" aria-label="版式参照">
+      <div class="journal-reference reveal">
+        <div class="reference-seal" aria-hidden="true"><span>READ<br>·<br>THINK</span></div>
+        <div><p>版式参照</p><h2>Today AI · The Today Blog</h2><span>按专题进入，再沿着长文往下读。METIS 将这份连续阅读，落在本地运行、协作协议与可复核的试验上。</span></div>
+        <a href="https://today.ai/articles/blog" target="_blank" rel="noreferrer">访问 Today Blog <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <!-- 札记索引 -->
+    <section class="blog-index" id="journal" aria-label="札记索引">
+      <div class="blog-index-head reveal">
+        <p class="folio">索引 · INDEX</p>
+        <div class="journal-tools">
+          <span class="journal-count">札记索引 <b>04</b></span>
+          <div class="journal-filters" role="group" aria-label="按主题筛选札记">
+            <button type="button" class="journal-filter is-current" data-filter="all" aria-pressed="true">全部</button>
+            <button type="button" class="journal-filter" data-filter="compare" aria-pressed="false">比较</button>
+            <button type="button" class="journal-filter" data-filter="protocol" aria-pressed="false">机制</button>
+            <button type="button" class="journal-filter" data-filter="evidence" aria-pressed="false">试验</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="journal-grid">
+        <button class="journal-card journal-feature reveal" type="button" data-category="compare" data-article-open="article-memory">
+          <div class="journal-art art-atlas" aria-hidden="true"><svg viewBox="0 0 760 360"><path d="M70 266 C210 252 181 105 350 115 S525 288 692 81"/><ellipse cx="382" cy="184" rx="223" ry="104"/><ellipse cx="382" cy="184" rx="111" ry="166" transform="rotate(48 382 184)"/><circle cx="382" cy="184" r="18"/><path d="M86 83h104M580 277h90"/></svg><span class="art-word art-today">TODAY</span><span class="art-word art-metis">METIS</span></div>
+          <span class="journal-card-copy"><span class="note-meta">COMPARISON · 12 MIN</span><span class="journal-title">同样谈记忆，Today 与本机 Agent 从哪里分岔？</span><span class="journal-summary">一边从跨设备的生活连续性展开；一边从浏览器、桌面与本地权限开始。</span><span class="note-link">展开札记 ↗</span></span>
+        </button>
+
+        <button class="journal-card reveal" type="button" data-category="protocol" data-article-open="article-relay">
+          <div class="journal-art art-relay" aria-hidden="true"><svg viewBox="0 0 480 250"><path d="M37 184 C117 184 90 65 190 65 S260 193 340 193 S394 94 447 94"/><circle cx="38" cy="184" r="8"/><circle cx="190" cy="65" r="8"/><circle cx="340" cy="193" r="8"/><circle cx="447" cy="94" r="8"/><rect x="154" y="36" width="72" height="54" rx="2"/><rect x="303" y="164" width="74" height="54" rx="2"/></svg></div>
+          <span class="journal-card-copy"><span class="note-meta">PROTOCOL · 9 MIN</span><span class="journal-title">后台问了一句，然后呢？</span><span class="journal-summary">一个问题如何回到前台，回答如何接回原任务。</span><span class="note-link">展开札记 ↗</span></span>
+        </button>
+
+        <button class="journal-card reveal" type="button" data-category="evidence" data-article-open="article-proof">
+          <div class="journal-art art-proof" aria-hidden="true"><svg viewBox="0 0 480 250"><path d="M56 198h362M82 209V44M90 170l68-30 58 12 57-76 51 32 63-56"/><circle cx="158" cy="140" r="6"/><circle cx="273" cy="76" r="6"/><circle cx="324" cy="108" r="6"/><path d="M83 88h330" stroke-dasharray="3 8"/></svg></div>
+          <span class="journal-card-copy"><span class="note-meta">EVIDENCE · 11 MIN</span><span class="journal-title">一声“完成”，还不算交付</span><span class="journal-summary">协议、工具回执与用户收到，分别要留下什么证据。</span><span class="note-link">展开札记 ↗</span></span>
+        </button>
+
+        <a class="journal-card reveal" data-category="compare" href="https://today.ai/articles/blog/what-is-today" target="_blank" rel="noreferrer">
+          <div class="journal-art art-memory" aria-hidden="true"><svg viewBox="0 0 480 250"><circle cx="242" cy="127" r="62"/><ellipse cx="242" cy="127" rx="190" ry="62" transform="rotate(-25 242 127)"/><ellipse cx="242" cy="127" rx="173" ry="82" transform="rotate(33 242 127)"/><path d="M60 208c68-35 105-18 165-49 82-42 94-107 183-129"/><circle cx="60" cy="208" r="7"/><circle cx="408" cy="30" r="7"/></svg></div>
+          <div class="journal-card-copy"><span class="note-meta">REFERENCE · TODAY AI</span><h3>一篇博客如何写出一个持续的 Agent</h3><p>从记忆、主动性与执行读 Today AI 的长文结构。</p><span class="note-link">阅读 Today 原文</span></div>
+        </a>
+      </div>
+    </section>
+
+    <section class="blog-outro">
+      <div class="blog-outro-inner reveal">
+        <p class="folio">回到主页</p>
+        <h2>水面还在那里。</h2>
+        <a class="ghost-button" href="./index.html">返回 METIS 首页 <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <!-- 长文弹窗 -->
+    <dialog class="article-dialog" id="article-memory" aria-labelledby="article-memory-title">
+      <article class="article-sheet">
+        <form method="dialog" class="article-close"><button aria-label="关闭札记">关闭 <span aria-hidden="true">×</span></button></form>
+        <header class="article-heading"><p class="note-meta">COMPARISON · MEMORY · 12 MIN</p><h2 id="article-memory-title">生活记忆，<br>怎样抵达下一步？</h2><p>对照一篇产品长文，也辨认本机 Agent 的起点。</p></header>
+        <figure class="article-illustration article-tide" aria-label="两组轨道交汇，分别代表跨设备的生活记忆与本机上下文"><svg viewBox="0 0 760 280" aria-hidden="true"><ellipse cx="380" cy="140" rx="315" ry="78" transform="rotate(-13 380 140)"/><ellipse cx="380" cy="140" rx="270" ry="92" transform="rotate(28 380 140)"/><path d="M70 216C194 205 222 70 351 84s188 151 335 24"/><circle cx="380" cy="140" r="14"/><circle cx="115" cy="209" r="7"/><circle cx="641" cy="103" r="7"/></svg><figcaption>跨设备的连续性 / 本机的具体处境</figcaption></figure>
+        <div class="article-body"><p>Today AI 的博客把 Agent 放回生活连续性里讲：记忆连接偏好、项目与目标，主动性从时间和上下文中长出来，执行再回到可读的结果。文章不是一排功能卡片，而是沿着一个问题逐层展开。</p><h3>本机，是另一种叙事起点</h3><p>METIS 的问题更贴近桌面：一个承诺是否还没收尾？当前 Edge 页面是不是本人正在使用的工作区？一次文件操作有没有留下结果？这些关系不能从“记住更多”自动推出，而要依赖明确来源、授权范围与动作后的回读。</p><p>借用 Today 的编辑节奏，不借它的云端假设。关于记忆的叙述，应该能指回一段观察；关于行动的叙述，应该能指回一次实际结果。</p><p class="article-source">阅读参照：<a href="https://today.ai/articles/blog/what-is-today" target="_blank" rel="noreferrer">What Is Today? · Today AI ↗</a></p></div>
+        <footer class="article-foot">METIS / 札记一 · 更新于 2026 年 11 月</footer>
+      </article>
+    </dialog>
+
+    <dialog class="article-dialog" id="article-relay" aria-labelledby="article-relay-title">
+      <article class="article-sheet">
+        <form method="dialog" class="article-close"><button aria-label="关闭札记">关闭 <span aria-hidden="true">×</span></button></form>
+        <header class="article-heading"><p class="note-meta">PROTOCOL · COOPERATION · 9 MIN</p><h2 id="article-relay-title">提问是接力，<br>不是暂停。</h2><p>后台缺少信息时，前台听见问题；回答之后，原任务继续。</p></header>
+        <figure class="article-illustration article-steps" aria-label="执行、询问、回答、恢复、交付的任务路径"><svg viewBox="0 0 760 280" aria-hidden="true"><path d="M64 142C128 142 126 76 204 76S271 206 348 206s75-130 151-130 73 130 151 130"/><g><circle cx="64" cy="142" r="11"/><circle cx="204" cy="76" r="11"/><circle cx="348" cy="206" r="11"/><circle cx="499" cy="76" r="11"/><circle cx="650" cy="206" r="11"/></g></svg><figcaption>执行 → 等待本人 → 回答 → 同一代际恢复 → 交付</figcaption></figure>
+        <div class="article-body"><p>后台 Agent 问问题，不应把一项工作丢进静默等待。问题要带着任务身份回到前台，语音与界面使用同一条问题记录；回答再按问题 ID 和任务代际送回去。</p><h3>保持同一件事</h3><p>继续、改向与取消是不同的动作。继续时，回答进入原任务，执行从等待位置接上；改向或取消时，旧任务代际失效，迟到的回答不能落到新工作里。</p><p>因此，状态图会包含“正在执行”“等待回答”“已恢复”和“已交付”。问题被生成不等于你听见了它，任务完成也不等于结果已经送达。</p></div>
+        <footer class="article-foot">METIS / 札记二 · 任务协作协议</footer>
+      </article>
+    </dialog>
+
+    <dialog class="article-dialog" id="article-proof" aria-labelledby="article-proof-title">
+      <article class="article-sheet">
+        <form method="dialog" class="article-close"><button aria-label="关闭札记">关闭 <span aria-hidden="true">×</span></button></form>
+        <header class="article-heading"><p class="note-meta">EVIDENCE · DELIVERY · 11 MIN</p><h2 id="article-proof-title">完成，需要两种证据：<br>结果与抵达。</h2><p>工具回执只能说明动作发生；交付还要说明人是否收到。</p></header>
+        <figure class="article-illustration article-receipt" aria-label="产物、摘要、播出和反馈四个阶段"><div><span>01</span><b>产物</b><small>文件 / 页面</small></div><div><span>02</span><b>摘要</b><small>结论 / 下一步</small></div><div><span>03</span><b>播出</b><small>排队 / 播放</small></div><div><span>04</span><b>回应</b><small>收到 / 修正</small></div></figure>
+        <div class="article-body"><p>研究文档可以存在磁盘上，但用户可能正在对话、听着语音，或暂时离开屏幕。我们把结果本身与结果送达分开：产物写入、短摘要生成、进入播报队列、真正播放、用户回应，分别记录。</p><h3>让数字有边界</h3><p>截至 2026 年 11 月 25 日，阶段二离线回归记录为 361 项、360 项通过、1 项因 Windows 权限分支跳过。它描述的是离线测试范围，不是任何真实账号、物理音箱或每个 Windows 应用都已验证。</p><p>受控网页能验证浏览器链路；真实账号仍需单独确认。测试报告保留未覆盖的部分，避免把“工具返回成功”写成“用户已经收到”。</p></div>
+        <footer class="article-foot">METIS / 札记三 · 证据索引更新于 2026 年 11 月 25 日</footer>
+      </article>
+    </dialog>
+  </main>
+
+  <footer class="site-footer">
+    <span>METIS · 墨提斯计划</span>
+    <span>为一个人，而不是为所有人。</span>
+    <a href="#top">回到页首</a>
+  </footer>
+</body>
+</html>
